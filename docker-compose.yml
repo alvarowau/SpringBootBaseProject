@@ -1,0 +1,14 @@
+services:
+  mysql:
+    image: mysql:latest  # Utiliza la última versión de MySQL
+    container_name: mysql-mi-primera-api
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootroot  # Establece la contraseña del usuario root
+      - MYSQL_DATABASE=db_persona  # Nombre de la base de datos que se creará
+    ports:
+      - "3308:3306"  # Mapea el puerto 3306 del contenedor al puerto 3308 de la máquina host
+    volumes:
+      - db_data:/var/lib/mysql  # Persistencia de datos
+
+volumes:
+  db_data:  # Volumen para persistencia de datos
