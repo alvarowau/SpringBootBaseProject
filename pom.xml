@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.alvarowau</groupId>
-    <artifactId>mi-primera-api-rest</artifactId>
+    <artifactId>SpringBootBaseProject</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mi-primera-api-rest</name>
-    <description>mi-primera-api-rest</description>
+    <name>SpringBootBaseProject</name>
+    <description>SpringBootBaseProject</description>
     <url/>
     <licenses>
         <license/>
