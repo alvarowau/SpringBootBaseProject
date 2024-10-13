@@ -18,4 +18,8 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "*")
 @RequestMapping("/api/v1/persons")
 public class PersonController extends BaseControllerImpl<Person, PersonServiceImpl> {
+
+    public PersonController(PersonServiceImpl service) {
+        super(service);
+    }
 }

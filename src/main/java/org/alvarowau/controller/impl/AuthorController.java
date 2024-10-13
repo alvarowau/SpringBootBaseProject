@@ -18,4 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = "*")
 @RequestMapping("/api/v1/authors")
 public class AuthorController extends BaseControllerImpl<Author, AuthorServiceImpl> {
+    public AuthorController(AuthorServiceImpl service) {
+        super(service);
+    }
 }
